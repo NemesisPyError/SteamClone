@@ -1,0 +1,57 @@
+nav {
+  background: #52167d;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+
+nav a, nav input {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+.menu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: #444;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  min-width: 150px;
+  z-index: 100;
+}
+
+.submenu li {
+  padding: 5px 10px;
+  color: white;
+}
+
+.submenu li:hover {
+  background: #555;
+}
+
+.menu:hover .submenu {
+  display: block;
+}
